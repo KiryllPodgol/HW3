@@ -385,6 +385,12 @@ MonoBehaviour:
   - {r: 0, g: 0.05882353, b: 0.9607843, a: 1}
   - {r: 0.92156863, g: 0.85882354, b: 0, a: 1}
   - {r: 0, g: 0.9607843, b: 0.03137255, a: 1}
+  PrevButton: {fileID: 753992544}
+  NextButton: {fileID: 973903297}
+  ButtonRed: {fileID: 588840067}
+  ButtonBlue: {fileID: 1096007534}
+  ButtonYellow: {fileID: 1657326626}
+  ButtonGreen: {fileID: 1571581477}
 --- !u!1 &190913765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,19 +1085,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 588840068}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 179358104}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: ChangeTextureColor
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &588840068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,19 +1327,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 753992545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 179358104}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: ChangePlane
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &753992545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1651,19 +1633,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 973903298}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 179358104}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: ChangePlane
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &973903298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,19 +1753,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1096007535}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 179358104}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: ChangeTextureColor
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1096007535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2731,19 +2689,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1571581478}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 179358104}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: ChangeTextureColor
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1571581478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2941,19 +2887,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1657326627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 179358104}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: ChangeTextureColor
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1657326627
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,13 +1,32 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     public int currentPlane = 0;
-    public Color[] textureColors; 
-
+    public Color[] textureColors;
+    public Button PrevButton;
+    public Button NextButton;
+    public Button ButtonRed;
+    public Button ButtonBlue;
+    public Button ButtonYellow;
+    public Button ButtonGreen;
     private void Awake()
     {
         SelectPlane(0);
+        if (PrevButton != null)
+            PrevButton.onClick.AddListener(() => ChangePlane(-1));
+        if (NextButton != null)
+            NextButton.onClick.AddListener(() => ChangePlane(1));
+        if (ButtonRed != null)
+            ButtonRed.onClick.AddListener(() => ChangeTextureColor(0));
+        if (ButtonBlue != null)
+            ButtonBlue.onClick.AddListener(() => ChangeTextureColor(1));
+        if (ButtonYellow != null)
+            ButtonYellow.onClick.AddListener(() => ChangeTextureColor(2));
+        if (ButtonGreen!=null)
+            ButtonGreen.onClick.AddListener(() => ChangeTextureColor(3));
+
     }
     public void SelectPlane(int _index)
     {
@@ -24,15 +43,22 @@ public class NewMonoBehaviourScript : MonoBehaviour
         SelectPlane(currentPlane);
     }
 
- 
+    private void OnDestroy()
+    { 
+       PrevButton.onClick.RemoveAllListeners();
+       NextButton.onClick.RemoveAllListeners();
+       ButtonRed.onClick.RemoveAllListeners();
+       ButtonBlue.onClick.RemoveAllListeners();
+       ButtonYellow.onClick.RemoveAllListeners();
+       ButtonGreen.onClick.RemoveAllListeners();
+    }
     public void ChangeTextureColor(int colorIndex)
     {
-        if (colorIndex >= 0 && colorIndex < textureColors.Length)
+        if (textureColors != null && textureColors.Length > colorIndex && colorIndex >= 0)
         {
             GameObject currentPlaneObject = transform.GetChild(currentPlane).gameObject;
-            Renderer planeRenderer = currentPlaneObject.GetComponent<Renderer>();
-
-            if (planeRenderer != null)
+            
+            if (currentPlaneObject.TryGetComponent<Renderer>(out var planeRenderer))
             {
                
                 planeRenderer.material.SetColor("_BaseColor", textureColors[colorIndex]);
