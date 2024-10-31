@@ -1,8 +1,14 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraSwitch : MonoBehaviour
 {
-    public Camera CameraMini; // —сылка на вашу камеру CameraMini
+    public Camera CameraMini; 
+
+    public Button ButtonUp;
+    public Button ButtonDown;
+    public Button ButtonLeft;
+    public Button ButtonFace;
 
     public Transform upView;
     public Transform downView;
@@ -11,12 +17,16 @@ public class CameraSwitch : MonoBehaviour
 
     private void Awake()
     {
+        ButtonUp.onClick.AddListener(SwitchToUpView);
+        ButtonDown.onClick.AddListener(SwitchToDownView);
+        ButtonLeft.onClick.AddListener(SwitchToLeftView);
+        ButtonFace.onClick.AddListener(SwitchToFaceView);
         SetCameraPosition(upView);
     }
     public void SwitchToFaceView()
     {
         SetCameraPosition(FaceView);
-        CameraMini.fieldOfView = 114.2f;
+       
     }
     public void SwitchToUpView()
     {

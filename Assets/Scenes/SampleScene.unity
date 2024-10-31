@@ -226,6 +226,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraMini: {fileID: 1307550619}
+  ButtonUp: {fileID: 701981470}
+  ButtonDown: {fileID: 1193344219}
+  ButtonLeft: {fileID: 2040853587}
+  ButtonFace: {fileID: 2047879950}
   upView: {fileID: 532050572}
   downView: {fileID: 1561956520}
   LeftView: {fileID: 1961648101}
@@ -1208,19 +1212,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 701981471}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 38612871}
-        m_TargetAssemblyTypeName: CameraSwitch, Assembly-CSharp
-        m_MethodName: SwitchToUpView
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &701981471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1955,19 +1947,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1193344220}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 38612871}
-        m_TargetAssemblyTypeName: CameraSwitch, Assembly-CSharp
-        m_MethodName: SwitchToDownView
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1193344220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3530,19 +3510,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2040853588}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 38612871}
-        m_TargetAssemblyTypeName: CameraSwitch, Assembly-CSharp
-        m_MethodName: SwitchToLeftView
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2040853588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3663,19 +3631,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2047879951}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 38612871}
-        m_TargetAssemblyTypeName: CameraSwitch, Assembly-CSharp
-        m_MethodName: SwitchToFaceView
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2047879951
 MonoBehaviour:
   m_ObjectHideFlags: 0
