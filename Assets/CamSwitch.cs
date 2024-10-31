@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class CameraSwitch : MonoBehaviour
 {
     public Camera CameraMini; 
-
     public Button ButtonUp;
     public Button ButtonDown;
     public Button ButtonLeft;
@@ -23,10 +22,10 @@ public class CameraSwitch : MonoBehaviour
         ButtonFace.onClick.AddListener(SwitchToFaceView);
         SetCameraPosition(upView);
     }
+   
     public void SwitchToFaceView()
     {
         SetCameraPosition(FaceView);
-       
     }
     public void SwitchToUpView()
     {
@@ -41,14 +40,20 @@ public class CameraSwitch : MonoBehaviour
         SetCameraPosition(LeftView);
     }
 
-
-
+    private void OnDestroy()
+    {
+        ButtonUp.onClick.RemoveListener(SwitchToUpView);
+        ButtonDown.onClick.RemoveListener(SwitchToDownView);
+        ButtonLeft.onClick.RemoveListener(SwitchToLeftView);
+        ButtonFace.onClick.RemoveListener(SwitchToFaceView);
+    }
     private void SetCameraPosition(Transform targetView)
     {
         if (CameraMini != null)
         {
-            CameraMini.transform.position = targetView.position;
-            CameraMini.transform.rotation = targetView.rotation;
+            Transform cameraMiniTransform = CameraMini.transform;
+            cameraMiniTransform.position = targetView.position;
+            cameraMiniTransform.rotation = targetView.rotation;
         }
         else
         {
