@@ -52,8 +52,7 @@ public class CameraSwitch : MonoBehaviour
         if (CameraMini != null)
         {
             Transform cameraMiniTransform = CameraMini.transform;
-            cameraMiniTransform.position = targetView.position;
-            cameraMiniTransform.rotation = targetView.rotation;
+            cameraMiniTransform.SetPositionAndRotation(targetView.position, targetView.rotation);
         }
         else
         {
